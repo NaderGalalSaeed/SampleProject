@@ -11,7 +11,6 @@ public static class SampleModelMapper
 {
     public static SampleModelViewModel ToViewModel(this SampleModel input)
     {
-        //Hello world
         var config = new MapperConfiguration(cfg => 
             cfg.CreateMap<SampleModel, SampleModelViewModel>()
             .ForMember(dest => dest.Gender, opt => opt.MapFrom(
